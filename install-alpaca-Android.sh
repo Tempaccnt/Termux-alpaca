@@ -1,5 +1,3 @@
-
-
 cd
 # update packages
 pkg update && pkg upgrade -y
