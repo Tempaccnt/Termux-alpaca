@@ -2,7 +2,7 @@ cd
 # update packages
 pkg update && pkg upgrade -y
 # install necessary packages
-pkg install clang wget git cmake
+pkg install clang wget git cmake -y
 #cloning the github repository of alpaca.cpp
 git clone  https://github.com/antimatter15/alpaca.cpp
 #enter alpaca.cpp folder
