@@ -12,7 +12,7 @@ how to use:
 
 ```
 pkg update && pkg upgrade -y
-pkg install git
+pkg install git -y
 cd
 git clone https://github.com/Tempaccnt/Termux-alpaca
 cd Termux-alpaca
