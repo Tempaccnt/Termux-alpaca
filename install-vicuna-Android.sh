@@ -1,4 +1,5 @@
 cd
+termux-setup-storage
 pkg update && pkg upgrade -y
 pkg install wget git cmake clang megatools -y
 git clone https://github.com/ggerganov/llama.cpp
@@ -16,4 +17,4 @@ echo 'cd' >> chat-vic
 echo 'cd llama.cpp' >> chat-vic
 echo 'cd examples' >> chat-vic
 echo './chat-vic7B.sh' >> chat-vic
-chmod +x chat-vic
+chmod +x /$PREFIX/bin/chat-vic
