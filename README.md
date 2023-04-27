@@ -22,10 +22,16 @@ chmod +x install-alpaca-Android.sh
 ./install-alpaca-Android.sh
 
 ```
-~~note: change install-alpaca-Android.sh to install-alpaca-mega.sh if you wish to use mega to download the model.~~
+note: change install-alpaca-Android.sh to install-vicuna-Android.sh if you wish to install llama.cpp and the 7B vicuna model
 
-after the installation is complete, you can start alpaca at any time by writing
+after the installation is complete, you can start alpaca at any time by writing:
 ```
 chat
 
 ```
+or you can start vicuna by writing:
+```
+chat-vic
+
+```
+ 
