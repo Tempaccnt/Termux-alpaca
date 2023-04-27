@@ -22,7 +22,7 @@ chmod +x install-alpaca-Android.sh
 ./install-alpaca-Android.sh
 
 ```
-<code style="color : red"> note: change install-alpaca-Android.sh to install-alpaca-mega.sh if you wish to use mega to download the model.</code>
+~~note: change install-alpaca-Android.sh to install-alpaca-mega.sh if you wish to use mega to download the model.~~
 
 after the installation is complete, you can start alpaca at any time by writing
 ```
