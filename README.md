@@ -7,7 +7,7 @@ All credits goes to the original developers of alpaca.cpp and the ggml-model-q4_
 
 ~~* install-alpaca-mega.sh this one uses mega to download the model(faster but with limited downloads)~~
 
-the previous two scripts were combined to one. now you will be asked to choose whether to use huggingface or mega. writr 1 for hugginface anything else will download the model using mega
+the previous two scripts were combined to one. now you will be asked to choose whether to use huggingface or mega. write 1 for hugginface anything else will download the model using mega
 
 how to use:
 * the easiest way is to clone the repository then make the script executable and run it. to do that write the following:
