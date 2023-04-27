@@ -11,6 +11,8 @@ how to use:
 * the easiest way is to clone the repository then make the script executable and run it. to do that write the following:
 
 ```
+pkg update && pkg upgrade -y
+pkg install git
 cd
 git clone https://github.com/Tempaccnt/Termux-alpaca
 cd Termux-alpaca
