@@ -13,11 +13,10 @@ cd
 git clone https://github.com/Tempaccnt/Termux-alpaca
 cd Termux-alpaca
 chmod +x install*
-./install-alpaca-Android.sh     # replace this with script of the model you desire e.g ./install-vicuna-Android.sh
+./termux-alpaca.sh
 
 ```
-note: change install-alpaca-Android.sh to install-vicuna-Android.sh if you wish to install llama.cpp and the 7B vicuna model
-
+then follow the prompts.
 after the installation is complete, you can start each model using the following:
 
 ```
