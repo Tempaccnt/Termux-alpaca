@@ -12,7 +12,7 @@ pkg install git -y
 cd
 git clone https://github.com/Tempaccnt/Termux-alpaca
 cd Termux-alpaca
-chmod +x install*
+chmod +x termux-alpaca.sh
 ./termux-alpaca.sh
 
 ```
