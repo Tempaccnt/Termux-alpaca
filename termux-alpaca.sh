@@ -140,7 +140,9 @@ elif [[ $choice -eq "2" ]]
         
 elif [[ $choice -eq "h" ]]
   then
-    cat help.txt
+    cd
+    cd Termux-alpaca
+    nano  help.txt
 else    
   echo "wrong input exiting"
 fi
