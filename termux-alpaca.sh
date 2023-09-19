@@ -5,6 +5,7 @@ echo "2-uninstall a model"
 echo "h-help"
 echo "enter anything else to exit"
 read choice
+termux-setup-storage
 
 if [[ $choice -eq "1" ]]
 	 then
@@ -16,7 +17,6 @@ if [[ $choice -eq "1" ]]
         if [[ $choice -eq "1" ]] 
 	  then
            cd
-           termux-setup-storage
            # update packages
            pkg update && pkg upgrade -y                                                                                 
            # install necessary packages
@@ -45,10 +45,11 @@ if [[ $choice -eq "1" ]]
            echo './chat' >> chat
            chmod +x chat
            cd
+	   echo "installation complete. run chat to start the model"
+
         elif [[ $choice -eq "2" ]]
 	 then
           cd
-          termux-setup-storage
           pkg update && pkg upgrade -y
           pkg install wget git cmake clang megatools -y
           git clone https://github.com/ggerganov/llama.cpp
@@ -67,10 +68,11 @@ if [[ $choice -eq "1" ]]
           echo 'cd examples' >> chat-vic
           echo './chat-vic7B.sh' >> chat-vic
           chmod +x /$PREFIX/bin/chat-vic
+	  echo "installation complete. run chat-vic to start the model"
+	  
         elif [[ $choice -eq "3" ]]
 	 then
            cd
-           termux-setup-storage
            pkg update && pkg upgrade -y
            pkg install wget git cmake clang megatools -y
            git clone https://github.com/ggerganov/llama.cpp
@@ -89,6 +91,7 @@ if [[ $choice -eq "1" ]]
            echo 'cd examples' >> chat-wiz
            echo './chat-wiz.sh' >> chat-wiz
            chmod +x /$PREFIX/bin/chat-wiz
+	   echo "installation complete. run chat-wiz to start the model"
         else    
            echo "wrong input exiting"
         fi
@@ -111,6 +114,7 @@ elif [[ $choice -eq "2" ]]
            rm chat
            # return to home directory
            cd
+	   echo "alpaca has been removed"
            elif [[ $choice -eq "2" ]]
             then
              # return to home directory
@@ -123,6 +127,7 @@ elif [[ $choice -eq "2" ]]
              rm chat-vic
              # return to home directory
              cd
+	     echo "Vicuna has been removed. if you don't have any other models installed, please remove llama.cpp manually"
             elif [[ $choice -eq "3" ]]
              then
              cd
@@ -134,6 +139,7 @@ elif [[ $choice -eq "2" ]]
              rm chat-wiz
              # return to home directory
              cd
+	     echo "WizardLM has been removed. if you don't have any other models installed, please remove llama.cpp manually"
             else
              echo "wrong input exiting"
         fi 
